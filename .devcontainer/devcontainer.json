@@ -27,6 +27,6 @@
     "forwardPorts": [
         8000
     ], // FastAPI 기본 포트
-    "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "vscode"
+    // "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "akrsotales"
 }
