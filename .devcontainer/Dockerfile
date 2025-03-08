@@ -1,5 +1,5 @@
 # 베이스 이미지 설정
-FROM python:3.14
+FROM python:3.13-bookworm
 
 # 작업 디렉토리 설정
 WORKDIR /usr/src/app
