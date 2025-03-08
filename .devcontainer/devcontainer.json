@@ -11,16 +11,22 @@
             "settings": {
                 "python.pythonPath": "/usr/local/bin/python",
                 "python.formatting.provider": "black",
-                "editor.formatOnSave": true
+                "editor.formatOnSave": false,
+                "files.autoSave": "afterDelay",
+                "files.autoSaveDelay": 100
             },
             "extensions": [
                 "ms-python.python", // Python 지원
                 "ms-python.vscode-pylance", // 고급 언어 지원
-                "ms-toolsai.jupyter", // Jupyter 노트북 지원
                 "ms-python.black-formatter", // Black 포매터
                 "ms-python.isort", // Import 정리
                 "ms-python.flake8", // 코드 린팅
-                "k--kato.intellij-idea-keybindings" // IntelliJ 키맵핑
+                "k--kato.intellij-idea-keybindings", // IntelliJ 키맵핑
+                "redhat.vscode-yaml", // Yaml
+                "esbenp.prettier-vscode", // Prettier for Front code
+                "pkief.material-icon-theme", // material Icon
+                "fill-labs.dependi", // Dependancy
+                "alexcvzz.vscode-sqlite" // SQLite Explorer
             ]
         }
     },
