@@ -1,0 +1,32 @@
+{
+    "name": "FastAPI Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "PYTHON_VERSION": "3.14" // 원하는 Python 버전으로 변경 가능
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python",
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "ms-python.python", // Python 지원
+                "ms-python.vscode-pylance", // 고급 언어 지원
+                "ms-toolsai.jupyter", // Jupyter 노트북 지원
+                "ms-python.black-formatter", // Black 포매터
+                "ms-python.isort", // Import 정리
+                "ms-python.flake8", // 코드 린팅
+                "k--kato.intellij-idea-keybindings" // IntelliJ 키맵핑
+            ]
+        }
+    },
+    "forwardPorts": [
+        8000
+    ], // FastAPI 기본 포트
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode"
+}
